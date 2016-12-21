@@ -44,10 +44,19 @@ module.exports = function () {
         },
         value: 0,
         hard: true,
+        canSplit: function () {
+            if (this.cards.length === 2) {
+                if (this.cards[0].face === this.cards[1].face) {
+                    return true;
+                }
+            }
+            return false;
+        },
         toString: function () {
             return (
                 '<' + this.value + '> ' +
                 '(' + (this.hard ? 'hard' : 'soft') + ') ' +
+                (this.canSplit() ? '[can split] ' : '') +
                 this.cards
             );
         }

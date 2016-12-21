@@ -5,8 +5,8 @@ var Shoe = require('../src/shoe.js'),
 
 function print() {
     console.log(
-        '\t\tHand:' + hand,
-        '\n\t\tShoe:' + shoe,
+        '\t\tHand: ' + hand,
+        '\n\t\tShoe: ' + shoe,
         '\n\n'
     );
 }
