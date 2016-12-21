@@ -19,7 +19,7 @@ module.exports = function (depth) {
             this.cards = _.shuffle(this.cards);
         },
         toString: function () {
-            return '\n' + this.cards;
+            return '<' + this.cards.length + '> ' + this.cards;
         }
     };
 };

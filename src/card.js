@@ -9,14 +9,14 @@ module.exports = function (o) {
     if (['j', 'q', 'k'].indexOf(o.face) >= 0) {
         value = 10;
     } else if (o.face === 'a') {
-        value = 11;
+        value = 1;
     }
 
     return {
         suit: o.suit,
         face: o.face,
         value: value,
-        auxValue: 1,
+        softValue: 11,
         toString: function () {
             return this.suit.name + this.face;
         }
