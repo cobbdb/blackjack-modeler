@@ -3,11 +3,14 @@ var Hand = require('./hand.js'),
 
 module.exports = {
     hand: Hand(),
+    reset: function () {
+        this.hand = Hand();
+    },
     decide: function (upcard) {
-        var type = hand.hard ? 'hard' : 'soft',
+        var type = this.hand.hard ? 'hard' : 'soft',
             decision = false;
 
-        if (hand.canSplit()) {
+        if (this.hand.canSplit()) {
             grid.split.forEach(function (block) {
                 var maps = block[1];
                 if (block[0].includes(this.hand.cards[0])) {
