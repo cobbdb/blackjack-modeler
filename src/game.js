@@ -1,4 +1,5 @@
 var Shoe = require('./shoe.js'),
+    shoe = Shoe(),
     player = require('./player.js'),
     dealer = require('./dealer.js');
 
