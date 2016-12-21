@@ -6,5 +6,8 @@
     "url": "git+https://github.com/cobbdb/blackjack-modeler.git"
   },
   "author": "Dan Cobb <cobbdb@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.2"
+  }
 }
