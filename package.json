@@ -1,0 +1,10 @@
+{
+  "name": "blackjack-modeler",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cobbdb/blackjack-modeler.git"
+  },
+  "author": "Dan Cobb <cobbdb@gmail.com>",
+  "license": "MIT"
+}
