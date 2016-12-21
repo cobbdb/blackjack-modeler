@@ -1,4 +1,5 @@
-var Player = require('./player.js');
+var Hand = require('./hand.js');
 
-module.exports = Player({
-});
+module.exports = {
+    hand: Hand()
+};

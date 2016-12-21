@@ -1,1 +1,2 @@
-var Shoe = require('./shoe.js');
+var Shoe = require('./shoe.js'),
+    Player = require()
